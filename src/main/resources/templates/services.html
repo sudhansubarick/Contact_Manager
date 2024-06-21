@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body>
+    <h1>This is our service</h1>
+    <div th:replace="~{fragmentBase::parent(~{::#second-content})}">
+        <section>
+            <h1>This is Dynamic service passed to fragmentBase parent </h1>
+        </section>
+
+        <section class="first-content">
+            <h1>This is Dynamic service passed to fragmentBase parent using class </h1>
+        </section>
+
+        <section id="second-content">
+            <h1>This is Dynamic service passed to fragmentBase parent using id </h1>
+        </section>
+    </div>
+
+</body>
+</html>

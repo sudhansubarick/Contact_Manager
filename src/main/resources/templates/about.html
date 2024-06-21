@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<body>
+
+    <h1>This is about page</h1>
+
+    <!--use thymeleaf fragment-->
+    <!--
+    <div class="host-tag" th:insert ="~{fragmentBase :: parent(~{::section})}" >
+    <section>
+        <h1>pass parameter using fragment</h1>
+        <button>fragment</button>
+    </section>
+    -->
+
+    <!--? use for to check true or false in controller , isLogin also pass from controller ,  if parent false then test will be call-->
+    <div  th:insert ="${isLogin} ? ~{fragmentBase :: parent(~{::section})} : ~{fragmentBase:: test}" >
+        <section>
+            <h1 >User logged In</h1>
+            <button>fragment</button>
+        </section>
+    
+</div>
+</body>
+</html>
