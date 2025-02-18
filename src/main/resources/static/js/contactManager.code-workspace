@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../../../.."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"java.compile.nullAnalysis.mode": "disabled",
+		"workbench.colorTheme": "Abyss",
+		"workbench.preferredDarkColorTheme": "Default Dark Modern"
+		
+	}
+	
+}

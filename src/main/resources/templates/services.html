@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{fragmentBase ::parent(~{::#con},~{::title},~{::script})}" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+  <title>service page</title>
 </head>
 <body>
-    <h1>This is our service</h1>
-    <div th:replace="~{fragmentBase::parent(~{::#second-content})}">
-        <section>
-            <h1>This is Dynamic service passed to fragmentBase parent </h1>
-        </section>
+    <section id="con">
+        <h1>Welcome to service page</h1>
+    </section>
 
-        <section class="first-content">
-            <h1>This is Dynamic service passed to fragmentBase parent using class </h1>
-        </section>
-
-        <section id="second-content">
-            <h1>This is Dynamic service passed to fragmentBase parent using id </h1>
-        </section>
-    </div>
-
+    <script>
+      console.log("This is service page script");
+  </script>
+    
 </body>
 </html>

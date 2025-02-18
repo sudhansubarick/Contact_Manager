@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" th:replace = "~{fragmentBase::parent(~{::#content},~{::title},~{::script})}">
+<head>
+   <title data-th-text="${loggedInUser.name}">DashBoard page</title>    
+</head>
+
+
+<body>
+
+    <div  id="content"> 
+          <!--  sidebar -->
+          <div th:if="${loggedInUser}">
+            <div data-th-replace="~{user/sidebar::sideBar}"></div>   
+    </div>
+
+    
+
+    <div class="sm:pl-64 pt-20" style="height: 1000px">
+        <h1>Welcome to Dashboard page</h1>
+    </div>
+      
+</div>
+
+   
+
+    <script>
+        console.log("This is DashBoard page script");
+    </script>
+    
+</body>
+</html>
