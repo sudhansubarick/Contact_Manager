@@ -17,7 +17,7 @@ public class ApiController {
     private ContactService contactService;
 
     @GetMapping("contacts/{contactId}")
-    public Contact getContact(@PathVariable String contactId){
+    public Contact getContact(@PathVariable String contactId) {
 
         return contactService.getById(contactId);
     }
