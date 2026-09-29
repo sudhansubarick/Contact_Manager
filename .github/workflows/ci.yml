@@ -78,7 +78,7 @@ jobs:
           path: target/*.jar
   docker:
     needs: build
-    if: github.ref == 'refs/heads/sudhansu/fixingcode'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
